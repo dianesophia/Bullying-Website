@@ -1,0 +1,41 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f7;
+    color: #333;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #2e8b7b;
+    padding: 18px;
+}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #f5a962;
+}
+
+/* Main heading */
+h1 {
+    margin-top: 100px;
+    font-size: 48px;
+    color: #2e8b7b;
+}
+
+/* Description */
+p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
