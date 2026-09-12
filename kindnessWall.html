@@ -8,43 +8,103 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="home.html">Stand Together</a>
+        <div class="wrap header-bar">
+        <a class="logo" href="home.html"><span class="logo-mark">&hearts;</span> Stand Together</a>
         <nav>
             <a href="home.html">Home</a>
-            <a href="building.html">About</a>
-            <a class="current" href="kindnessWall.html">Gallery</a>
-            <a href="getHelp.html">Contact</a>
+            <a href="building.html">Learn</a>
+            <a href="whatYouCanDo.html">What You Can Do</a>
+            <a href="resources.html">Resources</a>
+            <a class="current" href="kindnessWall.html">Kindness Wall</a>
+            <a href="storiesVoices.html">Stories</a>
+            <a href="joinMovement.html">Join</a>
+            <a class="nav-cta" href="getHelp.html">Get Help</a>
         </nav>
+        </div>
     </header>
 
-    <main class="simple-page">
-        <h1>Kindness Wall</h1>
-        <p>Kind words can make someone feel seen and safe. Here are a few messages from our community.</p>
-        <div class="kindness-box">
-            <p>"You belong here. Your voice matters."</p>
-        </div>
-        <div class="kindness-box">
-            <p>"Sit with someone new today. A small welcome can change a whole day."</p>
-        </div>
-        <div class="kindness-box">
-            <p>"Be the person you needed when you felt left out."</p>
-        </div>
-        <a class="button" href="home.html">Back to Home</a>
+    <main>
+        <section class="page-hero">
+            <div class="wrap">
+            <p class="label">Kindness Wall</p>
+            <h1>A Space for Words That Make a Difference</h1>
+            <p>One kind message may seem small, but someone having a difficult day might remember it for a long time. The Kindness Wall is a place where students, and people who experience bullying, can share encouragement, appreciation, reminders, and messages of support.</p>
+            </div>
+        </section>
+
+        <section class="content-page">
+            <h2>Leave a Message</h2>
+            <div class="kindness-grid">
+                <div class="kindness-box">
+                    <p>"You matter."</p>
+                </div>
+                <div class="kindness-box">
+                    <p>"You don’t have to face everything alone."</p>
+                </div>
+                <div class="kindness-box">
+                    <p>"Being kind is never embarrassing."</p>
+                </div>
+                <div class="kindness-box">
+                    <p>"Your voice deserves to be heard."</p>
+                </div>
+                <div class="kindness-box">
+                    <p>"Someone’s differences are not an invitation to hurt them."</p>
+                </div>
+                <div class="kindness-box">
+                    <p>"You belong here. Your voice matters."</p>
+                </div>
+                <div class="kindness-box">
+                    <p>"Sit with someone new today. A small welcome can change a whole day."</p>
+                </div>
+                <div class="kindness-box">
+                    <p>"Be the person you needed when you felt left out."</p>
+                </div>
+            </div>
+
+            <h2>Your Turn</h2>
+            <p>Write something you would want someone to hear on their hardest day.</p>
+            <form class="form-box" action="mailto:help@standtogether.org">
+                <label for="kindness-message">Write a Kind Message</label>
+                <textarea id="kindness-message" name="message" rows="4"></textarea>
+                <input class="button" type="submit" value="Send Message">
+            </form>
+
+            <div class="reminder-box">
+                <p><strong>Kindness Challenge</strong></p>
+                <p>Before you leave, do one kind thing for someone today. A safer community isn’t built by one big action. It’s built through small choices made every day.</p>
+            </div>
+
+            <div class="page-actions">
+                <a class="button button-blue" href="joinMovement.html">Join the Movement</a>
+                <a class="button" href="storiesVoices.html">Read Stories</a>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <div class="wrap footer-inner">
         <div class="footer-box">
             <p class="footer-logo">Stand Together</p>
+            <p>Stand Up. Speak Out. Stop Bullying.</p>
+            <p>Because everyone deserves a place where they feel safe, respected, and heard.</p>
             <p>&copy; 2026 Stand Together. All rights reserved.</p>
         </div>
         <div class="footer-box">
-            <p><strong>Contact</strong></p>
-            <p>Email: help@standtogether.org</p>
-            <p><a href="resources.html">Helpful Resources</a></p>
+            <p><strong>Explore</strong></p>
+            <p><a href="building.html">Learn About Bullying</a></p>
+            <p><a href="whatYouCanDo.html">What You Can Do</a></p>
+            <p><a href="getHelp.html">Get Help</a></p>
+            <p><a href="resources.html">Resources</a></p>
+            <p><a href="kindnessWall.html">Kindness Wall</a></p>
+            <p><a href="storiesVoices.html">Stories &amp; Voices</a></p>
+            <p><a href="joinMovement.html">Join the Movement</a></p>
         </div>
         <div class="footer-box">
-            <p><strong>Follow Us</strong></p>
-            <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+            <p><strong>Need support?</strong></p>
+            <p>Email: help@standtogether.org</p>
+            <p>If you feel unsafe, go to a trusted adult or local emergency services.</p>
+        </div>
+        <p class="footer-note">If you are in immediate danger, contact a trusted adult or local emergency services.</p>
         </div>
     </footer>
 </body>
