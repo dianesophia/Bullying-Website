@@ -1,4 +1,4 @@
-```css
+
 * {
     box-sizing: border-box;
 }
@@ -66,7 +66,6 @@ header {
     padding-top: 16px;
     padding-bottom: 16px;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -79,25 +78,29 @@ header {
     flex-shrink: 0;
 }
 
+.logo-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.logo-mark img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+}
+
 .logo:hover {
     color: maroon;
     animation: logoHover 0.2s ease forwards;
 }
 
-.logo-mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background-color: darkred;
-    color: white;
-    border-radius: 10px;
-    font-size: 16px;
-}
-
-.logo:hover .logo-mark {
-    background-color: maroon;
+.logo:hover .logo-mark img {
+    transform: scale(1.08);
 }
 
 nav {
@@ -503,12 +506,6 @@ footer {
     line-height: 1.5;
 }
 
-.footer-logo {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 footer a {
     color: mistyrose;
     text-decoration: none;
@@ -817,27 +814,140 @@ footer a:hover {
     transform: scale(1.08);
 }
 
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    color: white;
-    padding: 20px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: flex-end;
-    min-height: 60px;
-}
+  .card-row { align-items: stretch; }
+        .card .hotline-list {
+            list-style: none;
+            padding: 0;
+            margin: 0.75rem 0;
+        }
+        .card .hotline-list li {
+            margin-bottom: 0.6rem;
+            line-height: 1.4;
+        }
+        .card .hotline-list li:last-child {
+            margin-bottom: 0;
+        }
 
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
+        /* Contact page redesign — new hero/form layout */
+        .contact-hero {
+            padding-top: 40px;
+            padding-bottom: 36px;
+        }
 
-.gallery-overlay p {
-    margin: 0;
-    font-weight: bold;
-    font-size: 15px;
-}
+        .contact-layout {
+            align-items: flex-start;
+        }
+
+        .contact-form-col {
+            flex: 1 1 420px;
+            min-width: 0;
+        }
+
+        .contact-form-col .form-box {
+            margin-top: 0;
+        }
+
+        .contact-info-col {
+            flex: 1 1 280px;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background-color: white;
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        .info-icon {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: darkred;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .info-card h3 {
+            margin-bottom: 6px;
+            color: darkred;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .info-card p {
+            margin-bottom: 0;
+            color: slategray;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .info-card:hover {
+            background-color: white;
+        }
+
+        .info-card:hover h3 {
+            color: maroon;
+        }
+
+        .card .hotline-list li strong {
+            color: midnightblue;
+            font-weight: bold;
+        }
+
+        .card .hotline-list .phone-number {
+            display: block;
+            color: darkred;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 4px;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .form-row .field {
+            flex: 1 1 200px;
+            min-width: 0;
+        }
+
+        .optional {
+            font-weight: normal;
+            color: slategray;
+            font-size: 12px;
+        }
+
+        .form-box select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid gainsboro;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            background-color: white;
+            color: midnightblue;
+            box-sizing: border-box;
+        }
+
+        .form-box select:hover,
+        .form-box select:focus {
+            border-color: darkslateblue;
+            outline: none;
+        }
